@@ -1,0 +1,112 @@
+/* From Uiverse.io by dylanharriscameron */ 
+.card {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 49vw;
+    height: 48vh;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+  
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 46vw;
+    height: 48vh;
+    border-radius: 50%;
+    background-color: #ff0000;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+strong{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    color: orangered;
+    text-transform: capitalize;
+
+}
+span{
+    font-size: 2rem;
+    
+}
+b{
+    color: lightblue;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+section{
+    color: gray;
+    
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+h6{
+    font-size: 1.3rem;
+    color: grey;
+    margin-top: 0px;
+
+}
+.bg{
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('./wheather.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

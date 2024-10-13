@@ -1,0 +1,13 @@
+img{
+    width: 20vw;
+    margin: 20px;
+}
+.container{
+text-align: center;
+text-transform: capitalize;
+}
+body{
+   
+    background-position: center;
+    background-size: cover;
+}
